@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/1b65b31d31.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Css grid</title>
+</head>
+
+<body>
+
+    <header class="hero">
+        <nav class="social container">
+            <div class="social__logo"><i class="fas fa-meteor"></i> Meteor</div>
+            <div class="social__container">
+                <i class="fab fa-instagram-square icon"></i>
+                <i class="fab fa-facebook-square icon"></i>
+                <i class="fab fa-twitter-square icon"></i>
+                <i class="fab fa-linkedin icon"></i>
+            </div>
+        </nav>
+        <div class="hero__container container" data-aos="zoom-in">
+            <img src="img/ilustracion.svg" alt="" class="hero__img">
+            <div class="hero__texts">
+                <h1 class="hero__title">AGENCIA DE MARKETING DIGITAL</h1>
+                <p class="hero__copy">Convertimos tu idea de negocio o emprendimiento en todo un éxito con las
+                    herramientas que nos brinda internet.</p>
+                <a href="#modal" class="cta cta--bottom"><span class="cta__span"> información de los servicios</span>
+                    <i class="cta__icon fas fa-arrow-right icon"></i>
+                </a>
+            </div>
+        </div>
+
+        <!--Modal-->
+        <article class="modal" id="modal">
+            <div class="modal__content">
+              <a href="#cerrar" class="modal__close">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="" viewBox="0 0 24 24">
+                  <path
+                    d="M12,2C6.486,2,2,6.486,2,12s4.486,10,10,10s10-4.486,10-10S17.514,2,12,2z M16.207,14.793l-1.414,1.414L12,13.414 l-2.793,2.793l-1.414-1.414L10.586,12L7.793,9.207l1.414-1.414L12,10.586l2.793-2.793l1.414,1.414L13.414,12L16.207,14.793z" />
+                </svg>
+              </a>
+              <article class="content-form__modal">
+                <div class="modal__generator">
+                    <div class="modal__form">
+                      <form>
+                        <label class="modal__label"><i>Introduce el email donde te haremos llegar la información:</i></label>
+                        <input class="modal__input" type="email" required>
+                        <button class="modal__button" type="submit">Enviar email</button>
+                      </form>
+                    </div>
+                  </div>
+              </article>
+            </div>
+          </article>
+    </header>
+
+    <main class="main">
+        <section class="instructor container">
+            <div class="instructor__container">
+                <h2 class="instructor name">SOBRE NOSOTROS</h2>
+                <p class="instructor__tag">Empresa de marketing digital.</p>
+                <p class="instructor__paragraph" data-aos="zoom-in">Hoy en día la página web es un elemento
+                    indispensable para cualquier empresa ya que representa el primer punto de contacto con el cliente en
+                    Internet.
+                    Nuestros diseñadores web combinan la funcionalidad, el diseño y el buen gusto a la hora de diseñar y
+                    desarrollar su web. <br><br>Hacemos todo lo posible para asegurar que su contenido se distribuya de
+                    tal manera que los visitantes puedan encontrar la información que buscan fácil e intuitivamente, lo
+                    que resulta en una experiencia de usuario agradable y productiva.</p>
+            </div>
+        </section>
+
+        <section class="about container">
+            <div class="about__course">
+                <h2 class="title title--border">Diseño de páginas web</h2>
+                <p class="about__paragraph" data-aos="zoom-in">Los sitios web que producimos son limpios y frescos, cada
+                    uno diseñado de forma única. Además, nos esforzamos por asegurar que todos nuestros sitios cumplan
+                    con los estándares de accesibilidad exigidos por el World Wide Web Consortium. Nuestros sitios web
+                    se prueban en los navegadores más utilizados en diferentes resoluciones de pantalla.</p>
+
+                <p class="about__paragraph" data-aos="zoom-in">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Explicabo dicta veritatis magnam quisquam commodi aliquam nobis vitae veniam consequatur accusantium
+                    quia rem dolor consectetur, obcaecati, temporibus sint cum. Impedit, nulla.</p>
+
+                <a href="#modal" class="cta"><span class="cta__span"> Solicitar nuestros precios</span>
+                    <i class="cta__icon fas fa-arrow-right icon"></i></a>
+
+            </div>
+
+            <figure class="about__picture" data-aos="zoom-in">
+                <img src="img//web.jpg" alt="" class="about__img" data-aos="fade-up">
+            </figure>
+
+        </section>
+
+        <section class="card">
+            <!--El container no esta directamente en la section porque su fondo es de otro color-->
+            <div class="container">
+                <h2 class="title title--modifier">
+                    <spa class="title__span">Agencia de </spa>
+                    marketing digital
+                </h2>
+                <p class="card__copy">Ofrecemos una amplia gama de Marketing Digital y Servicios de Desarrollo Web.
+                    Nuestros servicios incluyen diseño web, desarrollo web, marketing en medios sociales, SEO y más.</p>
+
+                <div class="card__container">
+                    <div class="card__item" data-aos="fade-up">
+                        <figure class="card__img">
+                            <i class="card__icon fas fa-desktop"></i>
+                        </figure>
+                        <h3 class="card__title">DISEÑO <spa class="title__span">WEB</spa>
+                        </h3>
+                        <p class="paragraph">Desarrollamos Sitios Web según su necesidad, asegurando Visitas Online con
+                            planes para mantener su pagina web fresca y actualizada. Nuestro Objetivo es Atraer
+                            Clientes, Ventas y Crecimiento para su Negocio.</p>
+                    </div>
+
+                    <div class="card__item" data-aos="fade-left">
+                        <figure class="card__img">
+                            <i class="card__icon fas fa-users"></i>
+                        </figure>
+                        <h3 class="card__title">
+                            <spa class="title__span">REDES</spa> SOCIALES
+                        </h3>
+                        <p class="paragraph">Creamos estrategias en el Manejo o Administración de Redes Sociales para
+                            Posicionar y Mantener su Marca o Negocio en Facebook, Twitter, Instagram, Youtube, entre
+                            otros. Conectando a sus Seguidores.</p>
+                    </div>
+
+                    <div class="card__item" data-aos="fade-right">
+                        <figure class="card__img">
+                            <i class="card__icon fas fa-laptop-code"></i>
+                        </figure>
+                        <h3 class="card__title">SEO</h3>
+                        <p class="paragraph">Obtener las mejores clasificaciones para los términos de búsqueda deseados
+                            y conducir leads calificados que son cruciales para la construcción de su negocio.</p>
+                    </div>
+
+                    <div class="card__item" data-aos="fade-down">
+                        <figure class="card__img">
+                            <i class="card__icon fab fa-digital-ocean"></i>
+                        </figure>
+                        <h3 class="card__title">
+                            <spa class="title__span">MARKETING</spa> DIGITAL
+                        </h3>
+                        <p class="paragraph">Diseñamos Campañas de Marketing y Publicidad Online que permiten dar a
+                            conocer su Negocio en Internet. Posicionamos su empresa en Google y llevamos su mensaje a la
+                            Audiencia Online.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="result">
+            <div class="container conten-results">
+                <section class="numbers">
+                    <div class="number">
+                        <h4>95%</h4>
+                        <i class="result__icon fas fa-trophy"></i>
+                        <p>CLIENTES SATISFECHOS</p>
+                    </div>
+                    <div class="number">
+                        <h4>+200</h4>
+                        <i class="result__icon fas fa-award"></i>
+                        <p>CLIENTES ATENDIDOS</p>
+                    </div>
+                    <div class="number">
+                        <h4>+250</h4>
+                        <i class="result__icon fas fa-layer-group"></i>
+                        <p>PROYECTOS COMPLETADOS</p>
+                    </div>
+                    <div class="number">
+                        <h4>8</h4>
+                        <i class="result__icon fas fa-mug-hot"></i>
+                        <p>AÑOS DE TRAYECTORIA</p>
+                    </div>
+                </section>
+                <section class="results-text">
+                    <h4>Resultados</h4>
+                    <p>Conoce el resultados de nuestro trabajo <br /><br /> Hacemos todo lo posible para asegurar que su
+                        contenido se distribuya de tal manera que los visitantes puedan encontrar la información que
+                        buscan fácil e intuitivamente, lo que resulta en una experiencia de usuario agradable y
+                        productiva.</p>
+                </section>
+            </div>
+        </section>
+
+    <section data-aos="zoom-in">
+        <section class="course course--bottom container">
+            <figure class="course__picture">
+                <img src="img/img1.jpg" class="course__img" alt="">
+            </figure>
+
+            <div class="course__about">
+                <h2 class="title">Web a tu medida</h2>
+                <p class="about__paragraph">ofrecemos webs 100% a tu medida. Contamos con un equipo integral de
+                    creativos, diseñadores y programadores para llevar adelante el proyecto y que el cliente se
+                    pueda sentir libre de diseñar la página.</p>
+                <a href="#modal" class="cta"><span class="cta__span"> Solicitar nuestros precios</span> <i class="cta__icon fas fa-arrow-right icon"></i></a>
+            </div>
+        </section>
+        <section class="course course--bottom container">
+            <figure class="course__picture course__picture--right">
+                <img src="img/img2.jpg" class="course__img" alt="">
+            </figure>
+
+            <div class="course__about course__about--left">
+                <h2 class="title">Estructuradas</h2>
+                <p class="about__paragraph">Para aquellos clientes que buscan webs tradicionales y que cuentan con
+                    un
+                    presupuesto mas acotado, Meteor brinda la posibilidad de utilizar diseños de plantillas
+                    estructuradas una vez seleccionada.</p>
+                <a href="#modal" class="cta"><span class="cta__span">Solicitar nuestros precios</span> <i class="cta__icon fas fa-arrow-right icon"></i></a>
+            </div>
+        </section>
+        <section class="course container">
+            <figure class="course__picture">
+                <img src="img/img3.jpg" class="course__img" alt="">
+            </figure>
+
+            <div class="course__about">
+                <h2 class="title">Administrables</h2>
+                <p class="about__paragraph">Para aquellas empresas que necesitan actualizar su web constantemente
+                    les
+                    proponemos una página web en formato WORDPRESS (blog). Son páginas sumamente fáciles de utilizar
+                    y
+                    de interactuar.
+                </p>
+                <a href="#modal" class="cta"><span class="cta__span">Solicitar nuestros precios</span> <i class="cta__icon fas fa-arrow-right icon"></i></a>
+            </div>
+        </section>
+    </section>
+    </main>
+    <button class="scroll-top-btn hidden">&#11014;</button>
+    <footer class="footer">
+        <div class="footer_container container">
+            <div class="footer__contact">
+                <div class="footer__texts">
+                    <h2 class="title">¿Quieres saber más sobre nosotros?</h2>
+                    <p class="footer__copy">Siguenos por nuestras redes sociales.</p>
+
+                    <div class="footer__social">
+                        <i class="fab fa-instagram-square icon"></i>
+                        <i class="fab fa-facebook-square icon"></i>
+                        <i class="fab fa-twitter-square icon"></i>
+                        <i class="fab fa-linkedin icon"></i>
+                    </div>
+
+                </div>
+
+                <figure class="footer_picture">
+                    <img src="img/ilustracion.svg" class="footer__img" alt="">
+                </figure>
+            </div>
+
+            <p class="footer__copyright">Sitio web creado por &copy; </p>
+        </div>
+    </footer>
+    
+    <script src="js/main.js" type="module"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+</html>
