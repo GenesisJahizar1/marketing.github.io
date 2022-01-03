@@ -618,7 +618,7 @@ body {
         display: none;
     }
     .hero__title {
-        font-size: 3rem;
+        font-size: 2rem;
     }
 
     /*About*/
@@ -713,17 +713,9 @@ body {
     .hero__texts {
         text-align: center;
     }
-
-    .hero__title {
-        font-size: 3rem;
-    }
-
+  
     .cta {
         display: block;
-    }
-
-    .title {
-        font-size: 2rem;
     }
 
     .modal__generator {
@@ -733,10 +725,13 @@ body {
 
     /*Instructor*/
     .instructor {
-        --padding-container: 60px 0;
+        --padding-container: 20px 0;
     }
     .instructor__container {
-        width: 90%;
+        width: 100%;
+    }
+    .instructor__paragraph {
+        text-align: center;
     }
 
     /*About*/
